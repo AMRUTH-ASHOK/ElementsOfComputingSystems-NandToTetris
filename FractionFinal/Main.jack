@@ -1,0 +1,29 @@
+//Amruth
+//BL.EN.U4AIE20002
+//extension of fraction API(provided by Nand to Tetris 2)
+//existing feature - addition,gcd,print and dispose
+//features added  - multiplication and comparison
+//contains 2 classes Main and Fraction, hence has 2 files Main.jack and Fraction.jack
+
+class Main {
+   function void main() {
+      var Fraction a, b, c, d;        
+      let a = Fraction.new(5,10);  
+      let b = Fraction.new(1,2);  
+      let c = a.plus(b); 
+	  let d = a.mult(b);
+	  
+	  do Output.printString("a = ");do a.print();do Output.println();
+	  do Output.printString("b = ");do b.print();do Output.println();do Output.println();
+	  do Output.printString("sum of a&b = ");do c.print();do Output.println();do Output.println();
+	  do Output.printString("product of a&b = ");do d.print();do Output.println();do Output.println();
+	  do Output.printString("compare --- ");do a.compare(b);
+	  
+	  do a.dispose();
+	  do b.dispose();
+	  do c.dispose();
+	  do d.dispose();
+	  
+      return;
+   }
+}
