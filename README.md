@@ -20,4 +20,4 @@ HOW TO EDIT ?
 1. download the individual file (example :- List).
 2. open the Main.jack and other jack file(if existing) in your desired text editor (NOTEPAD++).
 3. edit as per you need and save it.
-4. follow step 2 from HOW TO RUN
+4. follow from step 2 in HOW TO RUN
