@@ -1,0 +1,35 @@
+//Amruth
+//The program calculates factorial of the inputed number
+//contains only one Main class
+
+class Main {
+   function void main() {
+      var int n, i, fact;
+	  let n = Keyboard.readInt("enter n");  
+	  let fact = 1;
+	  
+	  if(n=0){
+	  let fact=1;
+	  }
+	  
+	  if(n=1){
+	  let fact=1;
+	  }
+	  
+	  if(n>1){
+	  let i = 1;
+		while(i<(n+1)){
+			let fact = fact*i;
+			let i=i+1;
+		}
+	  }
+	  
+	  do Output.println();
+	  do Output.printString("The Factorial of ");
+	  do Output.printInt(n);
+	  do Output.printString(" = ");
+	  do Output.printInt(fact);
+
+	  return;
+   } 
+}
