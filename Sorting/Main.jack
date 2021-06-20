@@ -1,0 +1,66 @@
+//Amruth
+//the Program inputs n numbers into an array and arranges it in ascending and descending order
+//contains only Main class, hence 1 Main.jack file
+class Main {
+   function void main() {
+      var int i, j, a, length, temp, a1;
+	  var Array arr;
+     
+	  let length = Keyboard.readInt("HOW MANY NUMBERS?");
+	  let arr = Array.new(length);
+	  let a=0;
+	  while(a<length){
+		let arr[a] = Keyboard.readInt("enter the next number");
+		let a = a+1;
+	  } 
+	let i=0;
+	while(i<length){
+		let j=i+1;
+		while(j<length){
+			if(arr[i]>arr[j]){
+				let temp = arr[i];
+				let arr[i] = arr[j];
+				let arr[j] = temp;
+			}
+		
+		let j = j+1;
+		}
+	let i = i+1;
+	}
+	do Output.println();
+	do Output.println();
+	do Output.printString(" Ascending array is ");
+	do Output.println();
+	  let a1=0;
+	  while(a1<length){
+	    do Output.printChar(32);
+		do Output.printInt(arr[a1]);
+		let a1 = a1 +1;
+	  }
+	let i=0;
+	while(i<length){
+		let j=i+1;
+		while(j<length){
+			if(arr[i]<arr[j]){
+				let temp = arr[i];
+				let arr[i] = arr[j];
+				let arr[j] = temp;
+			}
+		
+		let j = j+1;
+		}
+	let i = i+1;
+	}
+	do Output.println();
+	do Output.println();
+	do Output.printString(" Descending array is ");
+	do Output.println();
+	let a1=0;
+	  while(a1<length){
+	    do Output.printChar(32);
+		do Output.printInt(arr[a1]);
+		let a1 = a1 +1;
+	  }
+      return;
+   }
+}
