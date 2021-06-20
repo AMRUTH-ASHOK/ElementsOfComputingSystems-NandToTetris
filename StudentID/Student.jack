@@ -1,0 +1,33 @@
+
+class Student{
+	 field int id;
+	 field String name;
+	 field String batch;
+	 
+	 constructor Student new(int x, String y,String z) {
+      let id = x;
+      let name = y;
+	  let batch = z;
+      return this;  
+    }
+	
+	method void print() {
+	  do Output.printString("   ID = ");
+      do Output.printInt(id);
+	  do Output.println();
+	  do Output.printString("Name = ");
+      do Output.printString(name);
+	  do Output.println();
+	  do Output.printString("Batch = ");
+	  do Output.printString(batch);
+	  do Output.println();
+	  do Output.printString("------");
+	  do Output.println();
+      return;
+   }
+   
+   method void dispose() {
+      do Memory.deAlloc(this);  
+      return;
+   }
+}
